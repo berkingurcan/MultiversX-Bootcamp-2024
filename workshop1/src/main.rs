@@ -29,6 +29,7 @@ fn max_in_vector(v: &Vec<i32>) -> Option<i32> {
 
 // Problem 5: Implement a function that checks if a number is prime.
 // The function should return true if the number is prime, and false otherwise.
+// https://crypto.stackexchange.com/questions/72351/why-can-every-prime-number-be-written-as-6k%C2%B11
 fn is_prime(n: u32) -> bool {
     // Your code here
     unimplemented!()
