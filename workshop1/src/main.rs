@@ -28,6 +28,7 @@ fn max_in_vector(v: &Vec<i32>) -> Option<i32> {
 
 fn main() {
     // You can test your functions here by calling them and printing the results
+    println!("I am working")
 }
 
 #[cfg(test)]
