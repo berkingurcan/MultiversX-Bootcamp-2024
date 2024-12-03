@@ -27,15 +27,7 @@ fn max_in_vector(v: &Vec<i32>) -> Option<i32> {
     unimplemented!()
 }
 
-// Problem 5: Implement a function that checks if a number is prime.
-// The function should return true if the number is prime, and false otherwise.
-// https://crypto.stackexchange.com/questions/72351/why-can-every-prime-number-be-written-as-6k%C2%B11
-fn is_prime(n: u32) -> bool {
-    // Your code here
-    unimplemented!()
-}
-
-// Problem 6: Implement a function that checks if a string is a palindrome.
+// Problem 5: Implement a function that checks if a string is a palindrome.
 // A palindrome is a word that reads the same backward as forward.
 // You can use other functions if you want ;)
 fn is_palindrome(s: &str) -> bool {
@@ -43,7 +35,13 @@ fn is_palindrome(s: &str) -> bool {
     unimplemented!()
 }
 
-
+// Problem 6: Implement a function that checks if a number is prime.
+// The function should return true if the number is prime, and false otherwise.
+// https://crypto.stackexchange.com/questions/72351/why-can-every-prime-number-be-written-as-6k%C2%B11
+fn is_prime(n: u32) -> bool {
+    // Your code here
+    unimplemented!()
+}
 
 fn main() {
     // You can test your functions here by calling them and printing the results
