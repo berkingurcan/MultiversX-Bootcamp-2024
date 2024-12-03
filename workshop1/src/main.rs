@@ -1,7 +1,7 @@
 // Problem 1: Implement a function that adds two numbers and returns the result.
 fn add(a: i32, b: i32) -> i32 {
     // Your code here
-    unimplemented!()
+    a + b
 }
 
 // Problem 2: Implement a function that calculates the factorial of a number.
@@ -9,7 +9,11 @@ fn add(a: i32, b: i32) -> i32 {
 // For example, factorial(5) should return 120.
 fn factorial(n: u32) -> u32 {
     // Your code here
-    unimplemented!()
+    if n == 0 {
+        1
+    } else {
+        n * factorial(n-1)
+    }
 }
 
 // Problem 3: Implement a function that reverses a given string.
@@ -17,29 +21,49 @@ fn factorial(n: u32) -> u32 {
 // https://stackoverflow.com/questions/24158114/what-are-the-differences-between-rusts-string-and-str
 fn reverse_string(s: &str) -> String {
     // Your code here
-    unimplemented!()
+    s.chars().rev().collect()
 }
 
 // Problem 4: Implement a function that finds the maximum element in a vector of integers.
 // The function should return None if the vector is empty.
 fn max_in_vector(v: &Vec<i32>) -> Option<i32> {
     // Your code here
-    unimplemented!()
+    v.iter().cloned().max()
 }
 
 // Problem 5: Implement a function that checks if a number is prime.
 // The function should return true if the number is prime, and false otherwise.
+// https://crypto.stackexchange.com/questions/72351/why-can-every-prime-number-be-written-as-6k%C2%B11
 fn is_prime(n: u32) -> bool {
     // Your code here
-    unimplemented!()
+    if n < 2 {
+        return false;
+    }
+    if n == 2 || n == 3 {
+        return true;
+    }
+    if n % 2 == 0 || n % 3 == 0 {
+        return false;
+    }
+    let mut i = 5;
+    while i * i <= n {
+        if n % i == 0 || n % (i + 2) == 0 {
+            return false;
+        }
+        i += 6;
+    }
+    true
 }
 
 // Problem 6: Implement a function that checks if a string is a palindrome.
 // A palindrome is a word that reads the same backward as forward.
 // You can use other functions if you want ;)
 fn is_palindrome(s: &str) -> bool {
-    // Your code here
-    unimplemented!()
+    let cleaned: String = s.chars()
+        .filter(|c| c.is_alphanumeric())
+        .map(|c| c.to_ascii_lowercase())
+        .collect();
+    cleaned == cleaned.chars().rev().collect::<String>()
 }
 
 
