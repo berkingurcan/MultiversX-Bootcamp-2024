@@ -34,6 +34,15 @@ fn is_prime(n: u32) -> bool {
     unimplemented!()
 }
 
+// Problem 6: Implement a function that checks if a string is a palindrome.
+// A palindrome is a word that reads the same backward as forward.
+// You can use other functions if you want ;)
+fn is_palindrome(s: &str) -> bool {
+    // Your code here
+    unimplemented!()
+}
+
+
 
 fn main() {
     // You can test your functions here by calling them and printing the results
@@ -80,5 +89,13 @@ mod tests {
         assert_eq!(is_prime(4), false);
         assert_eq!(is_prime(17), true);
         assert_eq!(is_prime(18), false);
+    }
+
+    #[test]
+    fn test_is_palindrome() {
+        assert_eq!(is_palindrome("racecar"), true);
+        assert_eq!(is_palindrome("hello"), false);
+        assert_eq!(is_palindrome(""), true);
+        assert_eq!(is_palindrome("a"), true);
     }
 }
