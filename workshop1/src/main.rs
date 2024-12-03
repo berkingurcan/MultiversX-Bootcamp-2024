@@ -31,6 +31,12 @@ fn max_in_vector(v: &Vec<i32>) -> Option<i32> {
     v.iter().cloned().max()
 }
 
+fn sum_of_multiples(n: u32) -> u32 {
+    (0..n) // Generate numbers from 0 to n-1
+        .filter(|x| x % 3 == 0 || x % 5 == 0) // Filter multiples of 3 or 5
+        .sum() // Sum the filtered numbers
+}
+
 // Problem 5: Implement a function that checks if a number is prime.
 // The function should return true if the number is prime, and false otherwise.
 // https://crypto.stackexchange.com/questions/72351/why-can-every-prime-number-be-written-as-6k%C2%B11
@@ -105,6 +111,15 @@ mod tests {
         assert_eq!(max_in_vector(&vec![1, 3, 2, 5, 4]), Some(5));
         assert_eq!(max_in_vector(&vec![-1, -3, -2, -5, -4]), Some(-1));
         assert_eq!(max_in_vector(&vec![]), None);
+    }
+
+    #[test]
+    fn test_sum_of_multiples() {
+        assert_eq!(sum_of_multiples(10), 23);
+        assert_eq!(sum_of_multiples(0), 0);
+        assert_eq!(sum_of_multiples(1), 0);
+        assert_eq!(sum_of_multiples(16), 60);
+        assert_eq!(sum_of_multiples(1000), 233168); // The solution to Project Euler Problem 1
     }
 
     #[test]
