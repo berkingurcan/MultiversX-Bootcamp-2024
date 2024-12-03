@@ -50,6 +50,9 @@ fn is_prime(n: u32) -> bool {
         if n % i == 0 || n % (i + 2) == 0 {
             return false;
         }
+        println!("{}", i);
+        println!("{}", n);
+
         i += 6;
     }
     true
@@ -66,7 +69,9 @@ fn is_palindrome(s: &str) -> bool {
 
 fn main() {
     // You can test your functions here by calling them and printing the results
-    println!("I am working")
+    println!("I am working");
+    let x = is_prime(12347);
+    println!("{}", x)
 }
 
 #[cfg(test)]
