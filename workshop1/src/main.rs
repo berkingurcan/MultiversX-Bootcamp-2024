@@ -5,6 +5,20 @@ fn add(a: i32, b: i32) -> i32 {
     unimplemented!()
 }
 
+// Problem 1.2: Implement a function that returns the larger of two numbers.
+// https://doc.rust-lang.org/book/ch03-03-how-functions-work.html
+fn max_of(a: i32, b: i32) -> i32 {
+    // Your code here
+    unimplemented!()
+}
+
+// Problem 1.3: Implement a function that checks if a number is even.
+// https://doc.rust-lang.org/book/ch03-03-how-functions-work.html
+fn is_even(n: i32) -> bool {
+    // Your code here
+    unimplemented!()
+}
+
 // Problem 2: Implement a function that calculates the factorial of a number.
 // The factorial of n (n!) is the product of all positive integers less than or equal to n.
 // For example, factorial(5) should return 120.
@@ -79,6 +93,15 @@ mod tests {
     }
 
     #[test]
+    fn test_is_even() {
+        assert_eq!(is_even(2), true);
+        assert_eq!(is_even(3), false);
+        assert_eq!(is_even(0), true);
+        assert_eq!(is_even(-2), true);
+        assert_eq!(is_even(-3), false);
+    }
+
+    #[test]
     fn test_reverse_string() {
         assert_eq!(reverse_string("rust"), "tsur");
         assert_eq!(reverse_string("hello"), "olleh");
@@ -116,5 +139,13 @@ mod tests {
         assert_eq!(sum_of_multiples(1), 0);
         assert_eq!(sum_of_multiples(16), 60);
         assert_eq!(sum_of_multiples(1000), 233168); // The solution to Project Euler Problem 1
+    }
+
+    #[test]
+    fn test_max() {
+        assert_eq!(max_of(1, 2), 2);
+        assert_eq!(max_of(5, 3), 5);
+        assert_eq!(max_of(-1, -2), -1);
+        assert_eq!(max_of(-5, 10), 10);
     }
 }
