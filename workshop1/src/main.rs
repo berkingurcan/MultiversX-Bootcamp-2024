@@ -14,6 +14,7 @@ fn factorial(n: u32) -> u32 {
 
 // Problem 3: Implement a function that reverses a given string.
 // For example, reverse_string("rust") should return "tsur".
+// https://stackoverflow.com/questions/24158114/what-are-the-differences-between-rusts-string-and-str
 fn reverse_string(s: &str) -> String {
     // Your code here
     unimplemented!()
