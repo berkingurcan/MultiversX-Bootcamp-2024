@@ -59,11 +59,7 @@ fn is_prime(n: u32) -> bool {
 // A palindrome is a word that reads the same backward as forward.
 // You can use other functions if you want ;)
 fn is_palindrome(s: &str) -> bool {
-    let cleaned: String = s.chars()
-        .filter(|c| c.is_alphanumeric())
-        .map(|c| c.to_ascii_lowercase())
-        .collect();
-    cleaned == cleaned.chars().rev().collect::<String>()
+    reverse_string(s) == s.to_string()
 }
 
 
