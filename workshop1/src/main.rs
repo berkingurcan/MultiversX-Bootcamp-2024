@@ -1,4 +1,5 @@
 // Problem 1: Implement a function that adds two numbers and returns the result.
+// https://doc.rust-lang.org/book/ch03-03-how-functions-work.html
 fn add(a: i32, b: i32) -> i32 {
     // Your code here
     unimplemented!()
@@ -7,6 +8,7 @@ fn add(a: i32, b: i32) -> i32 {
 // Problem 2: Implement a function that calculates the factorial of a number.
 // The factorial of n (n!) is the product of all positive integers less than or equal to n.
 // For example, factorial(5) should return 120.
+// https://doc.rust-lang.org/book/ch03-05-control-flow.html
 fn factorial(n: u32) -> u32 {
     // Your code here
     unimplemented!()
@@ -15,6 +17,7 @@ fn factorial(n: u32) -> u32 {
 // Problem 3: Implement a function that reverses a given string.
 // For example, reverse_string("rust") should return "tsur".
 // https://stackoverflow.com/questions/24158114/what-are-the-differences-between-rusts-string-and-str
+// https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
 fn reverse_string(s: &str) -> String {
     // Your code here
     unimplemented!()
@@ -22,6 +25,7 @@ fn reverse_string(s: &str) -> String {
 
 // Problem 4: Implement a function that finds the maximum element in a vector of integers.
 // The function should return None if the vector is empty.
+// https://doc.rust-lang.org/book/ch08-01-vectors.html
 fn max_in_vector(v: &Vec<i32>) -> Option<i32> {
     // Your code here
     unimplemented!()
