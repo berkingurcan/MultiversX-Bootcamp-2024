@@ -35,7 +35,14 @@ fn is_palindrome(s: &str) -> bool {
     unimplemented!()
 }
 
-// Problem 6: Implement a function that checks if a number is prime.
+// Problem 6: Implement a function that calculates the sum of all the multiples of 3 or 5 below a given number n.
+// For example, sum_of_multiples(10) should return 23, because 3 + 5 + 6 + 9 = 23.
+fn sum_of_multiples(n: u32) -> u32 {
+    // Your code here
+    unimplemented!()
+}
+
+// Problem 7: Implement a function that checks if a number is prime.
 // The function should return true if the number is prime, and false otherwise.
 // https://crypto.stackexchange.com/questions/72351/why-can-every-prime-number-be-written-as-6k%C2%B11
 fn is_prime(n: u32) -> bool {
@@ -96,5 +103,14 @@ mod tests {
         assert_eq!(is_palindrome("hello"), false);
         assert_eq!(is_palindrome(""), true);
         assert_eq!(is_palindrome("a"), true);
+    }
+
+    #[test]
+    fn test_sum_of_multiples() {
+        assert_eq!(sum_of_multiples(10), 23);
+        assert_eq!(sum_of_multiples(0), 0);
+        assert_eq!(sum_of_multiples(1), 0);
+        assert_eq!(sum_of_multiples(16), 60);
+        assert_eq!(sum_of_multiples(1000), 233168); // The solution to Project Euler Problem 1
     }
 }
