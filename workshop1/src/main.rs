@@ -27,6 +27,14 @@ fn max_in_vector(v: &Vec<i32>) -> Option<i32> {
     unimplemented!()
 }
 
+// Problem 5: Implement a function that checks if a number is prime.
+// The function should return true if the number is prime, and false otherwise.
+fn is_prime(n: u32) -> bool {
+    // Your code here
+    unimplemented!()
+}
+
+
 fn main() {
     // You can test your functions here by calling them and printing the results
     println!("I am working")
@@ -63,5 +71,14 @@ mod tests {
         assert_eq!(max_in_vector(&vec![1, 3, 2, 5, 4]), Some(5));
         assert_eq!(max_in_vector(&vec![-1, -3, -2, -5, -4]), Some(-1));
         assert_eq!(max_in_vector(&vec![]), None);
+    }
+
+    #[test]
+    fn test_is_prime() {
+        assert_eq!(is_prime(2), true);
+        assert_eq!(is_prime(3), true);
+        assert_eq!(is_prime(4), false);
+        assert_eq!(is_prime(17), true);
+        assert_eq!(is_prime(18), false);
     }
 }
