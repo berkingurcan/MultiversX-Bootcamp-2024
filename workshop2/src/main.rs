@@ -80,6 +80,7 @@ use secp256k1::{Secp256k1, SecretKey, PublicKey};
 fn derive_public_key(private_key_hex: &str) -> String {
     // Step 1: Decode the private key from hex string to bytes
     unimplemented!()
+    
     // Step 2: Create a SecretKey object using secp256k1
     unimplemented!()
 
@@ -129,5 +130,14 @@ mod tests {
         let key_hex = generate_private_key();
         // 32 bytes in hex = 64 hex chars
         assert_eq!(key_hex.len(), 64);
+    }
+
+    #[test]
+    fn test_derive_public_key() {
+        let private_key_hex = generate_private_key();
+        let public_key_hex = derive_public_key(&private_key_hex);
+
+        assert!(!public_key_hex.is_empty());
+        assert_eq!(public_key_hex.len(), 130);
     }
 }
