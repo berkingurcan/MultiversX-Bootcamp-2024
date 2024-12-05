@@ -9,6 +9,11 @@
 */
 
 // First Import necessary crates. Also change the Cargo.toml file
+// Necessary libraries: 
+// - https://crates.io/crates/sha2
+// - https://crates.io/crates/hex
+// - https://crates.io/crates/rand
+// - https://crates.io/crates/secp256k1
 // Then implement functions, pass tests.
 
 
