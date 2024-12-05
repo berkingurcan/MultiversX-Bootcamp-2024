@@ -88,6 +88,10 @@ fn derive_public_key(private_key_hex: &str) -> String {
     unimplemented!()
 }
 
+// MORE TASKS:
+// https://github.com/berkingurcan/Patika-MerkleTree-Assignment
+// https://github.com/zku-cohort-4/week4/tree/master/rust_assignment/freivald
+
 
 
 fn main() {
