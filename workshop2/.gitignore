@@ -1,0 +1,52 @@
+# Rust specific ignores
+/target/
+**/*.rs.bk
+
+# If you are using Cargo
+Cargo.lock
+
+# For generated documentation
+/doc/
+
+# Ignoring test result files
+/tests/**/*.rs.bk
+/tests/output/
+
+# Node modules in case of frontend with WASM
+/node_modules/
+
+# Ignoring temporary build files
+**/*.rs~ 
+**/*.rs__
+
+# Operating system generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+# VS Code
+.vscode/
+
+# JetBrains (CLion, IntelliJ, etc.)
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Emacs
+*~
+
+# Sublime Text
+*.sublime-workspace
+
+# Eclipse
+.project
+.cproject
+
+# Other
+*.bak
+*.tmp
+*.log
