@@ -69,6 +69,27 @@ fn generate_private_key() -> String {
     unimplemented!()
 }
 
+// ---------------------
+// BONUS TASK: Derive a Public Key from a Private Key using the secp256k1 crate 
+// Topics: Private key, Public key, Cryptography, Elliptic curve (Secp256k1) 
+// Concepts: Public key cryptography, Deterministic derivation from private key
+// https://en.wikipedia.org/wiki/Public-key_cryptography
+// https://en.wikipedia.org/wiki/Elliptic-curve_cryptography
+
+use secp256k1::{Secp256k1, SecretKey, PublicKey};
+fn derive_public_key(private_key_hex: &str) -> String {
+    // Step 1: Decode the private key from hex string to bytes
+    unimplemented!()
+    // Step 2: Create a SecretKey object using secp256k1
+    unimplemented!()
+
+    // Step 3: Derive the public key
+    unimplemented!()
+
+    // Step 4: Convert the public key to its serialized format and encode as hex
+    unimplemented!()
+}
+
 
 
 fn main() {
