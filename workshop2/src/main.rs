@@ -138,3 +138,22 @@ mod tests {
         assert_eq!(public_key_hex.len(), 130);
     }
 }
+
+
+/*
+
+  _____                _ _                 
+ |  __ \              | (_)                
+ | |__) |___  __ _  __| |_ _ __   __ _ ___ 
+ |  _  // _ \/ _` |/ _` | | '_ \ / _` / __|
+ | | \ \  __/ (_| | (_| | | | | | (_| \__ \
+ |_|  \_\___|\__,_|\__,_|_|_| |_|\__, |___/
+                                  __/ |    
+                                 |___/     
+        
+               
+https://www.activism.net/cypherpunk/manifesto.html                               
+https://activism.net/cypherpunk/crypto-anarchy.html       
+https://vitalik.eth.limo/general/2023/12/28/cypherpunk.html
+https://youtu.be/J_Pov8cO7O4?si=AqtRm3EZg2b6v_5Z                         
+*/
